@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin:0px;
+	padding:0px;
+	position:relative;
+	height:100%;	
+}
+@font-face {
+    font-family: 'IstokWebRegular';
+    src: url('istokweb-regular.eot');
+    src: url('istokweb-regular.eot') format('embedded-opentype'),
+         url('istokweb-regular.woff') format('woff'),
+         url('istokweb-regular.ttf') format('truetype'),
+         url('istokweb-regular.svg#IstokWebRegular') format('svg');
+}
+@font-face {
+    font-family: 'IstokWebBold';
+    src: url('istokweb-bold.eot');
+    src: url('istokweb-bold.eot') format('embedded-opentype'),
+         url('istokweb-bold.woff') format('woff'),
+         url('istokweb-bold.ttf') format('truetype'),
+         url('istokweb-bold.svg#IstokWebBold') format('svg');
+}
+body {
+	text-align:left;
+	position:relative;
+	font:normal 14px/150% 'IstokWebRegular';
+	color:#5a5b4d;
+	background:url(../images/main-bg.jpg) 0 0 repeat;
+	min-width:990px;
+}
+a {
+	color:#ef7f1a;
+	text-decoration:underline;
+}
+a:hover {
+	color:#ef7f1a;
+	text-decoration:none;
+}
+
+a img {border:none}
+a.highslide {display:block}
+a.highslide img {border:none}
+a.highslide:hover img {border:none}
+
+YMaps { color:#000; }
+
+h1,h2,h3,h4,h5,h6 { margin:0px; padding:0 0 12px; color:#c07bb2; font-family:Calibri; text-transform:uppercase}
+h1 { font-size:30px; padding:0 0 11px;}
+h2 { font-size:29px; color:#8c6146; font-weight:bold}
+h3 { font-size:28px}
+h4 { font-size:25px}
+h5,h6 { font-size:22px}
+
+
+#wrap {position:relative; height:auto !important; height:100%; min-height:100%; margin:0 0 -375px; background:url(../images/bg-top.jpg) 0 0 repeat-x}
+.clear {clear:both; height:0; font-size:0; float:none !important}
+.f-blank {height:375px; clear:both}
+#header {position:relative; height:136px; width:990px; margin:0 auto; z-index:50}
+.logo {position:absolute; top:0; left:7px}
+.upm {padding:14px 0 0 172px; margin:0; list-style:none; font-size:0; line-height:0}
+.upm li {float:left; padding:0 28px 0 30px; margin:0; background:url(../images/upm-sep.png) 100% 0 no-repeat}
+.upm li a {font:normal 13px/18px 'IstokWebRegular'; color:#FFF; text-decoration:none}
+.upm li a:hover {color:#f3a158}
+#header a.order-but {display:block; background:url(../images/order-but.png) 0 0 no-repeat; width:156px; height:46px; position:absolute; top:66px; right:9px}
+#header a.order-but:hover {background:url(../images/popup-form-sub-ov.png) 0 0 no-repeat;}
+#header .menu {position:absolute; top:77px; left:194px; padding:0; margin:0; list-style:none; font-size:0; line-height:0}
+#header .menu li {float:left; padding:0 9px 0 0; margin:0}
+#header .menu li a {display:block; height:32px; padding:0 17px; background:url(../images/menu-a.png) 0 0 repeat; font:normal 18px/32px 'IstokWebRegular'; color:#5b5b5b; text-decoration:none; border-radius:6px}
+#header .menu li a:hover {color:#FFF; background:#ef7f1a;
+-webkit-transition: background 0.5s ease;
+-moz-transition: background 0.5s ease;
+transition: background 0.5s ease;}
+
+
+
+#header .domain {position:absolute; top:79px; left:515px}
+#header .domain a.click {display:block; padding:0 0 0 26px; background:url(../images/domain-ico.png) 0 50% no-repeat; font:normal 18px 'IstokWebRegular'; color:#5b5b5b; text-decoration:underline}
+#header .domain a.click:hover {text-decoration:none}
+#header .domain .popup {position:absolute; top:33px; left:-13px; background:url(../images/popup-domain.png) 0 0 no-repeat; width:192px; height:42px; padding:14px 17px 0; display:none}
+#header .domain .popup form {padding:0; margin:0; vertical-align:top}
+#header .domain .popup input {display:block; padding:0; margin:0; vertical-align:top; outline:none; border:none; background:none; height:21px}
+#header .domain .popup input[type=text] {float:left; background:url(../images/domain-inp.png) 0 0 no-repeat; width:94px; font:normal 11px/21px 'IstokWebRegular'; color:#FFF; padding:0 8px}
+#header .domain .popup input[type=submit] {background:url(../images/domain-sub.png) 0 0 no-repeat; width:76px; float:right; cursor:pointer}
+#header .head-icos {position:absolute; top:11px; right:15px; padding:0; margin:0; list-style:none}
+#header .head-icos li {float:left; padding:0; margin:0; width:29px; position:relative}
+#header .head-icos li.ico1 {padding:0 6px 0 0}
+#header .head-icos li.ico2 {padding:0 13px 0 0}
+#header .head-icos li span {display:block; background:url(../images/popup-win-icos.png) 0 0 no-repeat; width:140px; height:49px; position:absolute; top:24px; right:0; z-index:1000; display:none; font:normal 12px 'IstokWebRegular'; color:#5a5a5a; padding:15px 0 0; text-align:center}
+#header .head-icos li span p {margin:0; padding:0 0 3px}
+#header .head-icos li.ico1 span {right:-22px}
+#header .head-icos li.ico3 span {right:-32px}
+
+
+.wrap-slider {background:url(../images/bg-sl.jpg) 0 100% repeat-x; padding:0 0 15px; height:351px}
+div.slider {height:351px; margin: 0; position: relative;}
+#scrollup {width: 100%; height: 351px;}
+.slides {display: none; width: 100% !important; height: 351px; text-align:center}
+.slides .block {position:absolute; top:0; left:0; width:990px; right:0; margin:0 auto; height:100%}
+.slides .block .block-in1 {position:absolute; top:61px; left:10px; text-align:left}
+.slides .block .block-in1 .title {font:normal 32px 'IstokWebBold'; color:#FFF}
+.slides .block .block-in1 .title2 {padding:0; font:normal 24px 'IstokWebRegular'; color:#FFF}
+.slides .block .block-in1 ul {padding:3px 0 0; margin:0; list-style:none; font-size:0; line-height:0; width:350px}
+.slides .block .block-in1 li {padding:0 0 0 33px; margin:0 0 20px; background:url(../images/marker.png) 0 50% no-repeat; font:normal 14px/18px 'IstokWebRegular'; color:#FFF}
+.slides .block .block-in1 ul li span {display:inline-block; background:#ef7f1a; padding:0 2px}
+
+.slides .block .block-in2 {position:absolute; top:58px; right:80px; width:432px; text-align:left}
+.slides .block .block-in2 .text {background:url(../images/sl2-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 16px/16px 'IstokWebRegular'; color:#000000; border-radius:6px}
+.slides .block .block-in2 .text p {margin:0; padding:15px 0 0}
+.slides .block .block-in2 a.more {display:block; margin:17px 0 0; width:99px}
+
+.slides .block .block-in3 {position:absolute; top:58px; right:80px; width:432px; text-align:left}
+.slides .block .block-in3 .text {background:url(../images/sl3-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 16px/16px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.slides .block .block-in3 .text p {margin:0; padding:15px 0 0}
+.slides .block .block-in3 a.more {display:block; margin:17px 0 0; width:102px}
+
+.slides .block .block-in4 {position:absolute; top:58px; right:80px; width:432px; text-align:left}
+.slides .block .block-in4 .text {background:url(../images/sl4-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 16px/16px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.slides .block .block-in4 .text p {margin:0; padding:15px 0 0}
+.slides .block .block-in4 a.more {display:block; margin:17px 0 0; width:102px}
+
+.slides .block .block-in5 {position:absolute; top:58px; right:80px; width:432px; text-align:left}
+.slides .block .block-in5 .text {background:url(../images/sl5-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 16px/16px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.slides .block .block-in5 .text p {margin:0; padding:15px 0 0}
+.slides .block .block-in5 a.more {display:block; margin:17px 0 0; width:102px}
+
+.slides .block .block-in6 {position:absolute; top:58px; right:80px; width:432px; text-align:left}
+.slides .block .block-in6 .text {background:url(../images/sl6-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 16px/16px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.slides .block .block-in6 .text p {margin:0; padding:15px 0 0}
+.slides .block .block-in6 a.more {display:block; margin:17px 0 0; width:102px}
+
+.slides .block .block-in7 {position:absolute; top:58px; right:80px; width:432px; text-align:left}
+.slides .block .block-in7 .text {background:url(../images/sl7-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 16px/16px 'IstokWebRegular'; color:#000; border-radius:6px}
+.slides .block .block-in7 .text p {margin:0; padding:15px 0 0}
+.slides .block .block-in7 a.more {display:block; margin:17px 0 0; width:102px}
+
+
+
+.cont-box {padding:0 0 110px;}
+.cont-box-main {padding-top:37px}
+.sep {text-align:center; background:url(../images/sep.png) 50% 100% no-repeat; padding:0 20px 33px 0; font:normal 26px 'IstokWebRegular'; color:#5b5b5b; position:relative}
+.sep a {position:absolute; bottom:0; left:50%; height:29px; width:98px; margin:0 0 0 -49px; display:block}
+
+.wrap-blocks1 {padding:15px 0 45px; width:990px; margin:0 auto}
+.wrap-blocks1 .left-block {float:left; width:406px; padding:0 80px 0 4px; font:normal 14px 'IstokWebRegular'; color:#5b5b5b}
+.wrap-blocks1 .left-block p {margin:0; padding:0 0 15px}
+.wrap-blocks1 .right-block {float:left; width:494px}
+.wrap-blocks1 .right-block .title {font:normal 24px 'IstokWebBold'; color:#ef7f1a; padding:0 0 25px 148px}
+.wrap-blocks1 .right-block .block {float:left; padding:0; margin:0; font:normal 18px/18px 'IstokWebRegular'; color:#5b5b5b; text-align:center}
+.wrap-blocks1 .right-block .block .for-ico {width:121px; height:97px; background:#e9e9e9; border-radius:50%; padding:24px 0 0; text-align:center; margin:0 auto 19px}
+.wrap-blocks1 .right-block .block a {color:#5b5b5b; text-decoration:none}
+.wrap-blocks1 .right-block .block1 {width:121px; padding:0 39px 0 0}
+.wrap-blocks1 .right-block .block2 {width:126px; padding:0 30px 0 0}
+.wrap-blocks1 .right-block .block3 {width:165px; padding:0}
+
+.wrap-blocks2 {padding:22px 0 55px; width:990px; margin:0 auto}
+.wrap-blocks2 .block {float:left; padding:0; margin:0; text-align:center; font:normal 24px/24px 'IstokWebRegular'; color:#5b5b5b}
+.wrap-blocks2 .block a {color:#5b5b5b; text-decoration:none; display:block; text-align:center}
+.wrap-blocks2 .block a img {display:inline-block; margin:0 0 10px}
+.wrap-blocks2 .block1 {width:185px; padding:0 108px 0 0}
+.wrap-blocks2 .block2 {width:136px; padding:0 86px 0 0}
+.wrap-blocks2 .block3 {width:204px; padding:0 81px 0 0}
+.wrap-blocks2 .block4 {width:173px; padding:0}
+
+.our-works {padding:32px 0 50px; width:990px; margin:0 auto}
+.our-works a {display:block; float:left; width:181px; height:138px; margin:0 16px 10px 0}
+
+.wrap-blocks3 {padding:0 0 0 4px; margin:0; width:990px; margin:0 auto}
+.wrap-blocks3 .block {float:left; padding:0; margin:0}
+.wrap-blocks3 .block > .title {text-align:center; border-bottom:1px dashed #959494; padding:0 0 10px; font:normal 26px/26px 'IstokWebRegular'; color:#5b5b5b; text-transform:uppercase; margin:0 0 30px}
+.wrap-blocks3 .block1 {width:432px; padding:0 92px 0 0}
+.wrap-blocks3 .block2 {width:443px; padding:0}
+.news-block {padding:0 0 35px; margin:0}
+.news-block .date {float:left; text-align:center; background:url(../images/date.png) 0 0 no-repeat; width:44px; height:37px; font:normal 11px 'IstokWebRegular'; color:#FFF; text-transform:uppercase; margin:0 8px 0 0; padding:7px 0 0}
+.news-block .date span {font-size:18px; line-height:16px; font-family:'IstokWebBold'; display:block}
+.news-block .info {float:left; width:378px; padding:0}
+.news-block .info .title {font:normal 18px 'IstokWebBold'; color:#707070}
+.news-block .info .anonce {padding:4px 0; font:normal 14px/20px 'IstokWebRegular'; color:#5b5b5b}
+.news-block .info a.more {font:normal 14px/20px 'IstokWebRegular'; color:#ef7f1a; text-decoration:none}
+.news-block .info a.more:hover {text-decoration:underline}
+
+.r-block {padding:0 0 30px; margin:0}
+.r-block .for-img {float:left; width:134px; padding:0 22px 0 0}
+.r-block .info {float:left; width:280px; padding:0}
+.r-block .info .title {font:normal 18px 'IstokWebBold'; color:#707070}
+.r-block .info .anonce {padding:4px 0; font:normal 14px/20px 'IstokWebRegular'; color:#5b5b5b}
+.r-block .info a.more {font:normal 14px/20px 'IstokWebRegular'; color:#ef7f1a; text-decoration:none}
+.r-block .info a.more:hover {text-decoration:underline}
+
+
+
+.wrap-footer {background:url(../images/bg-footer.jpg) 0 0 repeat-x}
+#footer {position:relative; height:375px; width:990px; margin:0 auto}
+#footer .png {position:absolute; top:-57px; right:65px; background:url(../images/foot-png.png) 0 0 no-repeat; width:196px; height:58px}
+#footer .soc {position:absolute; top:264px; right:32px; text-align:center; width:196px; font:normal 16px 'IstokWebBold'; color:#FFF}
+#footer .soc p {margin:0; padding:7px 0 0}
+#footer .soc a {display:inline-block; width:48px; height:48px; margin:0 4px}
+.bmenu {position:absolute; top:47px; left:605px; width:100px; font:normal 16px 'IstokWebBold'; color:#FFF}
+.bmenu p {margin:0; padding:0 0 17px}
+.bmenu ul {padding:0; margin:0; list-style:none; font-size:0; line-height:0}
+.bmenu ul li {display:block; padding:0 0 3px; margin:0}
+.bmenu ul li a {font:normal 14px 'IstokWebRegular'; color:#FFF; text-decoration:none}
+.bmenu ul li a:hover {color:#ef9442; text-decoration:underline}
+.contacts {position:absolute; top:47px; left:767px; width:223px}
+.contacts .title {padding:0 0 17px; font:normal 16px 'IstokWebBold'; color:#FFF}
+.contacts .addr {padding:0 0 20px 24px; background:url(../images/addr-ico.jpg) 0 1px no-repeat; font:normal 16px/22px 'IstokWebRegular'; color:#FFF}
+.contacts .addr p {margin:0; padding:0}
+.contacts .tel {background:url(../images/tel-ico.jpg) 0 2px no-repeat; padding:0 0 3px 24px}
+.contacts .mail {background:url(../images/mail-ico-b.jpg) 0 7px no-repeat; padding:0 0 3px 24px}
+#footer .bot-form {position:absolute; top:34px; left:3px; width:555px}
+#footer .bot-form .title {padding:0 0 8px 5px; font:normal 16px 'IstokWebBold'; color:#FFF; text-transform:uppercase}
+#footer .bot-form form {padding:0; margin:0; vertical-align:top}
+#footer .bot-form input {padding:0; margin:0; vertical-align:top; border:none; background:none; outline:none}
+#footer .bot-form form span.left {display:block; float:left; width:271px}
+#footer .bot-form form span.right {display:block; float:right; width:271px}
+#footer .bot-form input[type=text] {background:url(../images/bot-form-inp.png) 0 0 no-repeat; width:241px; height:50px; display:block; font:normal 12px/50px 'IstokWebRegular'; color:#FFF; padding:0 15px; margin:0 0 8px}
+#footer .bot-form textarea {display:block; background:url(../images/bot-form-text.png) 0 0 no-repeat; height:76px; min-height:76px; max-height:76px; width:525px; min-width:525px; max-width:525px; outline:none; resize:none; font:normal 12px 'IstokWebRegular'; color:#FFF;; margin:0 0 10px; padding:20px 15px; border:none}
+#footer .bot-form input[type=submit] {float:right; background:url(../images/bot-form-sub.png) 0 0 no-repeat; width:100px; height:36px; cursor:pointer; margin:0 3px 0 0}
+#footer .bot-form input[type=submit]:hover {background:url(../images/bot-form-sub-ov.png) 0 0 no-repeat}
+
+/* CMS_template */
+
+.wrap-price-block {background:url(../images/price-block-bg.jpg) 0 0 repeat-x; height:518px; margin:0 0 40px; padding:51px 0 0}
+.sep2 {background:url(../images/sep2.png) 50% 100% no-repeat; color:#FFF}
+.wrap-price-block-in {width:990px; margin:0 auto; padding:22px 0 0}
+.wrap-price-block-in .product-item {float:left; background:url(../images/item-block.png) 0 0 no-repeat; width:219px; height:415px; margin:0 0 0 33px}
+.wrap-price-block-in .product-item:first-child {margin:0 0 0 6px}
+.wrap-price-block-in .product-item .product-name {text-align:center; height:57px; font:normal 16px/55px 'IstokWebRegular'; color:#FFF; text-transform:uppercase}
+.wrap-price-block-in .product-item .product-info {height:160px; padding:12px 15px 0; margin:0; list-style:none; font-size:0; line-height:0}
+.wrap-price-block-in .product-item .product-info li {display:block; border-top:1px solid #c5c5c5; padding:3px 1px 4px; font:normal 13px/18px 'IstokWebRegular'; color:#5b5b5b; text-align:center}
+.wrap-price-block-in .product-item .product-info li:first-child {border:none}
+.wrap-price-block-in .product-item .product-price {text-align:center; font:normal 18px 'IstokWebRegular'; color:#49ad40; height:40px}
+.wrap-price-block-in .product-item .product-price span {font-size:24px}
+.wrap-price-block-in .product-item a.product-more {width:70px; margin:0 auto; display:block; text-align:center; height:16px; font:normal 12px/16px 'IstokWebRegular'; color:#FFF; text-decoration:none; background:#ef7f1a}
+.wrap-price-block-in .product-item a.product-order {display:block; background:url(../images/order-but-item.png) 0 0 no-repeat; width:100px; height:36px; margin:11px auto 0}
+.wrap-price-block-in .product-item a.product-order:hover {background:url(../images/order-but-item-ov.png) 0 0 no-repeat;}
+
+
+/* CMS_template_ceni */
+
+.wrap-title-page {background:url(../images/title-page-bg.jpg) 0 0 repeat-x}
+.wrap-title-page-in {height:62px; padding:0 0 15px; background:url(../images/title-page.jpg) 50% 0 no-repeat}
+.wrap-title {width:990px; margin:0 auto; padding:0}
+.wrap-title h1 {font:normal 30px/63px 'IstokWebRegular'; color:#FFF; padding:0 0 0 196px; text-transform:none}
+.content {width:990px; margin:0 auto; padding:0; min-height:500px}
+.prices-block {width:712px; margin:0 auto; padding:55px 0 0}
+
+.tab-block {padding:0; margin:0 0 2px}
+.tab-block .title {position:relative; cursor:pointer; background:url(../images/tab-a.jpg) 0 0 repeat; height:41px; border-radius:4px}
+.tab-block .title span.t {display:block; padding:0 0 0 24px; font:normal 22px/41px 'IstokWebRegular'; color:#FFF; background:url(../images/tab-mar.png) 9px 50% no-repeat}
+.tab-block .title a {position:absolute; display:block; padding:0 35px 0 0; top:10px; right:16px; font:normal 12px/24px 'IstokWebRegular'; color:#b1b1b1; text-decoration:none}
+.tab-block .title a span {display:block; height:24px; width:24px; background:url(../images/sprite.png) -25px 0 no-repeat; position:absolute; top:0; right:0}
+.tab-block .title.active {background:url(../images/tab-a-ac.jpg) 0 0 repeat;}
+.tab-block .title.active span.t {background:url(../images/tab-mar-ac.png) 9px 50% no-repeat}
+.tab-block .title.active a {color:#ffd8b4}
+.tab-block .title.active a span {background-position:0 0}
+.tab-block .tab-cont {padding:27px 35px 25px 36px; font:normal 15px 'IstokWebRegular'; color:#5b5b5b; display:none; width:641px}
+.tab-block .tab-cont table {width:100%; border:none; border-collapse:collapse; border-bottom:1px solid #b6b6b6}
+.tab-block .tab-cont table tr {border-top:1px solid #b6b6b6}
+.tab-block .tab-cont table tr td {border-left:1px solid #b6b6b6; padding:14px 0}
+.tab-block .tab-cont table tr td:first-child {border:none}
+
+
+/* CMS_template_domain */
+
+.domain-page {width:714px; margin:0 auto; padding:23px 0 0}
+.domain-block {background:url(../images/domain-block-bg.png) 0 0 repeat; height:90px; border-radius:8px; padding:15px 86px 0 69px; margin:0 0 30px}
+.domain-block form {padding:0; margin:0; vertical-align:top}
+.domain-block input {padding:0; margin:0; vertical-align:top; border:none; background:none; outline:none}
+.domain-block span.field-title {float:left; width:166px; font:normal 18px/38px 'IstokWebRegular'; color:#5b5b5b; padding:2px 0 0}
+.domain-block input[type=text] {float:left; width:238px; height:38px; background:url(../images/domain-input.png) 0 0 no-repeat; font:normal 12px/38px 'IstokWebRegular'; color:#FFF; text-transform:uppercase; padding:0 10px; margin:2px 16px 0 0}
+.domain-block input[type=submit] {display:block; float:left; background:url(../images/domain-submit.png) 0 0 no-repeat; width:119px; height:40px; cursor:pointer}
+.domain-block .text {padding:4px 0 0 170px; font:normal 14px/20px 'IstokWebRegular'; color:#5b5b5b}
+
+.domain-page .left-block {float:left; width:178px; padding:0}
+.domain-page .left-block .title {font:normal 14px/20px 'IstokWebRegular'; color:#ef7f1a; text-transform:uppercase; padding:0 0 16px 5px}
+.domain-page .left-block .reg {padding:0; margin:0}
+.domain-page .left-block .reg form {vertical-align:top; padding:0; margin:0; font:normal 18px 'IstokWebRegular'; color:#5b5b5b}
+.domain-page .left-block .reg input {padding:0; margin:0; vertical-align:top; display:block; border:none; background:none; outline:none; display:block}
+.domain-page .left-block .reg input[type=text] {background:url(../images/reg-inp.png) 0 0 no-repeat; width:143px; height:38px; padding:0 10px; font:normal 13px/38px 'IstokWebRegular'; color:#FFF; margin:0 0 9px}
+.domain-page .left-block .reg input[type=submit] {display:block; background:url(../images/reg-sub.png) 0 0 no-repeat; width:81px; height:34px; cursor:pointer}
+
+.domain-page .middle-block {float:left; width:293px; border-left:1px solid #bdbdbd;  border-right:1px solid #bdbdbd; padding:0 14px 0 16px; font:normal 14px/20px 'IstokWebRegular'; color:#5b5b5b}
+.domain-page .middle-block .title {font:normal 14px/20px 'IstokWebRegular'; color:#0e7fa8; padding:0 0 16px}
+
+.domain-page .right-block {float:left; width:187px; padding:0 0 0 14px; font:normal 14px/16px 'IstokWebRegular'; color:#5b5b5b}
+.domain-page .right-block .title {font:normal 14px/14px 'IstokWebRegular'; color:#5b5b5b; text-transform:uppercase; padding:0 0 16px}
+.domain-page .right-block p {margin:0; padding:0 0 20px}
+.domain-page .right-block p a {text-decoration:none}
+
+
+/* CMS_template_klientam */
+
+.klientam-page {padding:33px 0 0}
+.klientam-page .text {width:700px; margin:0 auto; padding:17px 0 30px; font:normal 14px/20px 'IstokWebRegular'; color:#5b5b5b}
+.klientam-page .text p {margin:0; padding:20px 0 0}
+
+
+/* CMS_template_uslugi */
+
+.uslugi-tab .tab-cont {padding:6px 0; width:712px}
+.uslugi-tab .tab-cont div.banner {position:relative; height:287px}
+
+.uslugi-tab .tab-cont div.banner1 {background:url(../images/banner1.jpg) 0 0 no-repeat}
+.uslugi-tab .tab-cont div.banner1 .block-in {position:absolute; top:37px; right:23px; width:348px; text-align:left}
+.uslugi-tab .tab-cont div.banner1 .block-in .text {background:url(../images/sl2-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 13px/14px 'IstokWebRegular'; color:#000000; border-radius:6px}
+.uslugi-tab .tab-cont div.banner1 .block-in .text p {margin:0; padding:15px 0 0}
+.uslugi-tab .tab-cont div.banner1 .block-in a.more {display:block; margin:17px 0 0; width:99px}
+
+.uslugi-tab .tab-cont div.banner2 {background:url(../images/banner2.jpg) 0 0 no-repeat}
+.uslugi-tab .tab-cont div.banner2 .block-in {position:absolute; top:37px; right:23px; width:348px; text-align:left}
+.uslugi-tab .tab-cont div.banner2 .block-in .text {background:url(../images/sl3-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 13px/14px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.uslugi-tab .tab-cont div.banner2 .block-in .text p {margin:0; padding:15px 0 0}
+.uslugi-tab .tab-cont div.banner2 .block-in a.more {display:block; margin:17px 0 0; width:99px}
+
+.uslugi-tab .tab-cont div.banner3 {background:url(../images/banner3.jpg) 0 0 no-repeat}
+.uslugi-tab .tab-cont div.banner3 .block-in {position:absolute; top:37px; right:23px; width:348px; text-align:left}
+.uslugi-tab .tab-cont div.banner3 .block-in .text {background:url(../images/sl4-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 13px/14px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.uslugi-tab .tab-cont div.banner3 .block-in .text p {margin:0; padding:15px 0 0}
+.uslugi-tab .tab-cont div.banner3 .block-in a.more {display:block; margin:17px 0 0; width:99px}
+
+.uslugi-tab .tab-cont div.banner4 {background:url(../images/banner4.jpg) 0 0 no-repeat}
+.uslugi-tab .tab-cont div.banner4 .block-in {position:absolute; top:37px; right:23px; width:348px; text-align:left}
+.uslugi-tab .tab-cont div.banner4 .block-in .text {background:url(../images/sl5-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 13px/14px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.uslugi-tab .tab-cont div.banner4 .block-in .text p {margin:0; padding:15px 0 0}
+.uslugi-tab .tab-cont div.banner4 .block-in a.more {display:block; margin:17px 0 0; width:99px}
+
+.uslugi-tab .tab-cont div.banner5 {background:url(../images/banner5.jpg) 0 0 no-repeat}
+.uslugi-tab .tab-cont div.banner5 .block-in {position:absolute; top:37px; right:23px; width:348px; text-align:left}
+.uslugi-tab .tab-cont div.banner5 .block-in .text {background:url(../images/sl6-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 13px/14px 'IstokWebRegular'; color:#fff; border-radius:6px}
+.uslugi-tab .tab-cont div.banner5 .block-in .text p {margin:0; padding:15px 0 0}
+.uslugi-tab .tab-cont div.banner5 .block-in a.more {display:block; margin:17px 0 0; width:99px}
+
+.uslugi-tab .tab-cont div.banner6 {background:url(../images/banner6.jpg) 0 0 no-repeat}
+.uslugi-tab .tab-cont div.banner6 .block-in {position:absolute; top:37px; right:23px; width:348px; text-align:left}
+.uslugi-tab .tab-cont div.banner6 .block-in .text {background:url(../images/sl7-info-bg.png) 0 0 repeat; padding:20px 15px 20px 23px; font:normal 13px/14px 'IstokWebRegular'; color:#000; border-radius:6px}
+.uslugi-tab .tab-cont div.banner6 .block-in .text p {margin:0; padding:15px 0 0}
+.uslugi-tab .tab-cont div.banner6 .block-in a.more {display:block; margin:17px 0 0; width:99px}
+
+.overlay {position:fixed; top:0; left:0; width:100%; height:100%; background:url(../images/overlay.png) 0 0 repeat; z-index:999; display:none}
+.popup-form {background:url(../images/popup-form-bg.png) 0 0 repeat; width:564px; height:652px; position:absolute; top:10%; left:50%; margin:0 0 0 -320px; border-radius:6px; box-shadow:3px 3px 7px #000; z-index:1000; padding:0 38px; display:none}
+.popup-form .title {text-align:center; font:normal 24px 'IstokWebRegular'; color:#053646; padding:21px 0 25px}
+.popup-form form {padding:0; margin:0; vertical-align:top}
+.popup-form form span.left {display:block; float:left; width:270px; padding:0 0 10px}
+.popup-form form span.right {display:block; float:right; width:270px; padding:0 0 10px}
+.popup-form input {padding:0; margin:0; vertical-align:top; border:none; background:none; outline:none}
+.popup-form input[type=text] {display:block; background:url(../images/popup-form-inp.png) 0 0 no-repeat; width:240px; height:49px; padding:1px 15px 0; font:normal 12px/50px 'IstokWebRegular'; color:#FFF; text-transform:uppercase; margin:0 0 14px}
+.popup-form .empty {border-top:1px dashed #8d8c8c; padding:20px 0 0; margin:0 7px}
+
+span.left-check {float:left; width:299px; font:normal 12px 'IstokWebRegular'; color:#2a3134; text-transform:uppercase}
+span.right-check {float:left; width:260px; font:normal 12px 'IstokWebRegular'; color:#2a3134; text-transform:uppercase}
+span.right-check a {color:#008ab7}
+span.niceCheck { display:inline-block; margin:0 10px 0 7px; width:17px; height:17px; background:url(../images/check.png) 0 0 no-repeat; cursor:pointer; vertical-align:middle}
+span.niceCheck input { display:none; }
+span.niceChecked { display:inline-block; width:17px; height:17px; background:url(../images/check-ac.png) 0 0 no-repeat; cursor:pointer; }
+span.niceChecked input { display:none; }
+
+span.wrap-select {display:block; padding:15px 0 17px 7px; font:normal 12px 'IstokWebRegular'; color:#2a3134; text-transform:uppercase}
+span.wrap-select span.f-title {float:left; width:88px; line-height:49px}
+span.wrap-select span.add {display:block; padding:0 0 0 94px; cursor:pointer;  font:normal 10px 'IstokWebRegular'; color:#2a3134; text-transform:uppercase}
+
+span.check-block-left {display:block; float:left; width:250px; padding:0 0 0 7px}
+span.check-block-left .f-title {font:normal 12px 'IstokWebRegular'; color:#2a3134; text-transform:uppercase; display:block; margin:0 0 10px}
+span.check-block-right {width:220px}
+.popup-form textarea {display:block; background:url(../images/popup-form-text.png) 0 0 no-repeat; width:531px; min-width:531px; max-width:531px; height:87px; min-height:87px; max-height:87px; font:normal 12px 'IstokWebRegular'; color:#FFF; margin:3px auto 0; padding:18px 17px 10px; border:none; outline:none; resize:none}
+.popup-form input[type=submit] {background:url(../images/popup-form-sub.png) 0 0 no-repeat; width:156px; height:46px; cursor:pointer; margin:16px auto 0; display:block}
+.popup-form input[type=submit]:hover {background:url(../images/popup-form-sub-ov.png) 0 0 no-repeat;}
+
+
+#toTop {
+	position: fixed;
+	top: 50px;
+	right: 10px;
+	background: none;
+	cursor: pointer;
+	width:55px; height:55px;
+	background:url(../images/to-top.png) 0 0 no-repeat;
+	z-index:1000000;
+	display:none;
+} 
